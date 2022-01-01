@@ -5,11 +5,13 @@
 #include <vector>
 using namespace std;
 long long getGreatestValueIdx(long long length, vector<long long> input_nums, long long idx_to_ignore = -1){
-    int idx_of_max = 0;
+    int idx_of_max = -1;
     for(long long i = 0; i <length; i++){
         if(i == idx_to_ignore)
             continue;
-        if(input_nums[i] > input_nums[idx_of_max])
+        if(idx_of_max == -1)
+            idx_of_max = 1;
+        if(input_nums[i] >= input_nums[idx_of_max])
             idx_of_max = i;
     }
     return idx_of_max;
