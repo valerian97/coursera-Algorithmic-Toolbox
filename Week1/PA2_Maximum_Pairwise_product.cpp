@@ -10,7 +10,7 @@ long long getGreatestValueIdx(long long length, vector<long long> input_nums, lo
         if(i == idx_to_ignore)
             continue;
         if(idx_of_max == -1)
-            idx_of_max = 1;
+            idx_of_max = i;
         if(input_nums[i] >= input_nums[idx_of_max])
             idx_of_max = i;
     }
