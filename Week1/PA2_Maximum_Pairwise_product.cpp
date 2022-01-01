@@ -23,14 +23,14 @@ long long pairWiseProduct(long long length, vector<long long> input_nums){
 }
 
 
-int main(){
-    long long n;
-    cin>>n;
-    vector <long long> inputs;
-    inputs.resize(n);
-    for (long long i = 0; i<n;i++)
-        cin>>inputs[i];
-    cout<<pairWiseProduct(n,inputs);
-}
+// int main(){
+//     long long n;
+//     cin>>n;
+//     vector <long long> inputs;
+//     inputs.resize(n);
+//     for (long long i = 0; i<n;i++)
+//         cin>>inputs[i];
+//     cout<<pairWiseProduct(n,inputs);
+// }
 
 

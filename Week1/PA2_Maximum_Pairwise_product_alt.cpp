@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -17,12 +18,12 @@ long long getMaxPairwiseProduct(long long length, vector <long long> input_nums)
     return product;
 
 }
-int main(){
-    long long n;
-    vector <long long> inputs;
-    cin>>n;
-    inputs.resize(n);
-    for(long long i = 0; i<n;i++)
-        cin>>inputs[i];
-    cout<<getMaxPairwiseProduct(n,inputs);
-}
+// int main(){
+//     long long n;
+//     vector <long long> inputs;
+//     cin>>n;
+//     inputs.resize(n);
+//     for(long long i = 0; i<n;i++)
+//         cin>>inputs[i];
+//     cout<<getMaxPairwiseProduct(n,inputs);
+// }
